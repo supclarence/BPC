@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Profit Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Business Profit Calculator</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Products Section -->
+    <section>
+      <h2>Products</h2>
+      <div id="products"></div>
+      <button class="add-btn" onclick="addProduct()">➕ Add Product</button>
+    </section>
+
+    <!-- Expenses Section -->
+    <section>
+      <h2>Other Expenses</h2>
+      <div id="expenses"></div>
+      <button class="add-btn" onclick="addExpense()">➕ Add Expense</button>
+    </section>
+
+    <!-- Results Section -->
+    <section>
+        <h2>Results</h2>
+        <div id="results" class="card"></div>
+        <div id="productBreakdown" class="card"></div>
+      
+        <div class="actions">
+          <button class="calc-btn" onclick="calculate()">💡 Calculate</button>
+          <button class="clear-btn" onclick="clearAll()">🗑️ Clear All</button>
+        </div>
+      </section>      
+  </main>
+  <footer>
+    <p>© 2025 John Clarence. All rights reserved.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
